@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.activity.profile.ProfileActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_main_app" />
+
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgProfile"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:src="@drawable/user" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/grey" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingEnd="@dimen/activity_vertical_margin"
+                            android:paddingStart="@dimen/activity_vertical_margin"
+                            android:paddingTop="@dimen/activity_vertical_margin"
+                            android:text="@string/first_name"
+                            android:textSize="@dimen/_12ssp" />
+
+
+                        <EditText
+                            android:id="@+id/txtFirstName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:imeOptions="actionDone"
+                            android:inputType="textCapWords"
+                            android:maxLines="1"
+                            android:fontFamily="@font/clanpro_narrnews"
+
+                            android:paddingBottom="@dimen/activity_vertical_margin"
+                            android:paddingEnd="@dimen/activity_vertical_margin"
+                            android:paddingStart="@dimen/activity_vertical_margin"
+                            android:paddingTop="@dimen/_7sdp"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="@dimen/text_medium" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grey" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingEnd="@dimen/activity_vertical_margin"
+                            android:paddingStart="@dimen/activity_vertical_margin"
+                            android:paddingTop="@dimen/activity_vertical_margin"
+                            android:text="@string/last_name"
+                            android:textSize="@dimen/_12ssp" />
+
+
+                        <EditText
+                            android:id="@+id/txtLastName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:imeOptions="actionDone"
+                            android:inputType="text|textCapSentences"
+                            android:maxLines="1"
+                            android:fontFamily="@font/clanpro_narrnews"
+
+                            android:paddingBottom="@dimen/activity_vertical_margin"
+                            android:paddingEnd="@dimen/activity_vertical_margin"
+                            android:paddingStart="@dimen/activity_vertical_margin"
+                            android:paddingTop="@dimen/_7sdp"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="@dimen/text_medium" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/grey" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/border_bottom"
+                    android:padding="@dimen/_7sdp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="@dimen/_7sdp"
+                        android:paddingStart="@dimen/_7sdp"
+                        android:paddingTop="@dimen/_7sdp"
+                        android:text="@string/phone_number"
+                        android:textSize="@dimen/_12ssp" />
+
+
+                    <EditText
+                        android:id="@+id/txtPhoneNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:imeOptions="actionDone"
+                        android:inputType="phone"
+                        android:maxLines="1"
+                        android:fontFamily="@font/clanpro_narrnews"
+                        android:maxLength="10"
+                        android:enabled="false"
+                        android:padding="@dimen/_7sdp"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/text_medium" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_bottom"
+                    android:padding="@dimen/_7sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="0dp"
+                        android:paddingTop="8dp"
+                        android:text="@string/emergency_number_1"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/colorSecondaryText" />
+
+
+                    <EditText
+                        android:id="@+id/emergency_mobile1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:fontFamily="@font/clanpro_narrnews"
+                        android:inputType="phone"
+                        android:enabled="true"
+                        android:padding="12dp"
+                        android:maxLength="10"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/text_medium" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_bottom"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_7sdp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="0dp"
+                        android:paddingTop="8dp"
+                        android:text="@string/emergency_number_2"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/colorSecondaryText" />
+
+
+                    <EditText
+                        android:id="@+id/emergency_mobile2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:fontFamily="@font/clanpro_narrnews"
+                        android:inputType="phone"
+                        android:enabled="true"
+                        android:padding="12dp"
+                        android:maxLength="10"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/text_medium" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_7sdp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="@dimen/_7sdp"
+                        android:paddingStart="@dimen/_7sdp"
+                        android:paddingTop="@dimen/_7sdp"
+                        android:text="@string/email"
+                        android:textSize="@dimen/_12ssp" />
+
+                    <EditText
+                        android:id="@+id/txtEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:enabled="true"
+                        android:imeOptions="actionNext"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:padding="@dimen/_7sdp"
+                        android:textColor="@color/colorSecondaryText"
+                        android:textSize="@dimen/text_medium" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/grey" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_7sdp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="@dimen/_7sdp"
+                        android:paddingStart="@dimen/_7sdp"
+                        android:paddingTop="@dimen/_7sdp"
+                        android:text="@string/service"
+                        android:textSize="@dimen/_12ssp" />
+
+                    <EditText
+                        android:id="@+id/txtService"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:enabled="false"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:fontFamily="@font/clanpro_narrnews"
+                        android:padding="@dimen/_7sdp"
+                        android:hint="@string/no_service_available"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/text_medium" />
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/btnSave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:text="@string/save"
+                    android:textColor="#FFF" />
+
+                <TextView
+                    android:id="@+id/lblChangePassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/clanpro_narrnews"
+                    android:gravity="center"
+                    android:padding="@dimen/activity_vertical_margin"
+                    android:visibility="visible"
+                    android:text="@string/looking_to_change_password"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_medium" />
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

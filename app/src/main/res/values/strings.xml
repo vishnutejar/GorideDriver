@@ -1,0 +1,240 @@
+<resources>
+    <!--welcome-->
+    <string name="sign_in">Login</string>
+    <string name="sign_up">Register Now</string>
+    <string name="or_connect_with_social">Or connect with social</string>
+
+    <string name="walk_1">W E L C O M E</string>
+    <string name="walk_2">D R I V E</string>
+    <string name="walk_3">E A R N</string>
+    <string name="walk_1_description">Introducing Tranxit cab Services to take rides from the Tranxit Taxi app users.</string>
+    <string name="walk_2_description">Be your own boss, set your own schedule. Get the latest driving features all in one spot.</string>
+    <string name="walk_3_description">Get well paid to help out strangers get to where they need to go. Withdraw your earnings every week/monthly.</string>
+    <string name="lorum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum, non proident, sunt in culpa qui officia deserunt mollit anim id est laborum,non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+
+
+    <string name="welcome_back_sign_in_to_continue">Welcome back, sign in to continue</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="i_forgot_my_password">I forgot my password</string>
+    <string name="i_need_to_create_an_account">I need to create an account</string>
+    <string name="invalid_email">Please enter email address</string>
+    <string name="invalid_password">Please enter password</string>
+    <string name="phonenumberValidation">Please Enter Phone number</string>
+    <string name="what_your_phonenumber">What\'s your Mobile Number?</string>
+
+
+    <string name="curr_pwd_val">Please enter current password!</string>
+    <string name="confirm_pwd_val">Please enter confirm password!</string>
+
+
+    <string name="enter_the_details_you_used_to_register">Enter the details you used to register</string>
+    <string name="email">Email</string>
+    <string name="name">Name</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="phone_number">Phone number</string>
+    <string name="mobile_number">Mobile number</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+
+
+    <string name="choose_an_account">Choose an account</string>
+    <string name="facebook">Facebook</string>
+    <string name="google">Google</string>
+
+
+    <!--ForgotPassword Activity-->
+    <string name="enter_your_mail_id_for_recover">Enter your mail ID for recovery</string>
+    <string name="enter_your_mobile_id_for_recover">Enter your mobile number for recovery</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="name_example_com">name@example.com</string>
+    <string name="phone_example_com">9876543210</string>
+    <string name="new_password">New Password</string>
+    <string name="note_please_enter_the_otp_send_tc_your_registered_email_address">Note: Please enter the OTP send to your registered email address</string>
+
+    <string name="i_have_read_and_agrred_the_n_terms_and_conditions">I have read and agreed the   Terms and Conditions</string>
+
+
+    <string name="your_trips">My Trips</string>
+    <string name="wallet">Wallet</string>
+    <string name="help">Help</string>
+    <string name="share">Share</string>
+    <string name="invite_referral">Invite Referral</string>
+    <string name="logout">Logout</string>
+
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="earnings">Earnings</string>
+    <string name="summary">Summary</string>
+    <string name="document">Documents</string>
+
+
+    <string name="past">Past</string>
+    <string name="upcoming">Upcoming</string>
+
+    <string name="upcoming_trip_details">Upcoming Trip Details</string>
+    <string name="no_data_found">No data found</string>
+
+
+    <string name="booking_id">Booking ID</string>
+    <string name="submit">Submit</string>
+    <string name="close">Close</string>
+
+    <string name="cancel_ride">Cancel Ride</string>
+    <string name="call">Call</string>
+    <string name="pay_via">Pay via</string>
+    <string name="comments">Comments</string>
+    <string name="cash">Cash</string>
+    <string name="view_receipt">View Receipt</string>
+
+
+    <string name="invoice">Invoice</string>
+    <string name="time_taken">Time Taken</string>
+    <string name="distance_travelled">Distance Travelled</string>
+    <string name="base_fare">Base Fare</string>
+    <string name="distance_fare">Distance Fare</string>
+    <string name="tax">Tax</string>
+    <string name="tips">Tips</string>
+    <string name="total">Total</string>
+    <string name="profile">Profile</string>
+    <string name="service">Service</string>
+    <string name="save">Save</string>
+
+
+    <string name="today_completed_target">Today\'s Completed Target</string>
+    <!-- Earning-->
+    <string name="sample_earnings" translatable="false">0/0</string>
+    <string name="target_completed">Ride Counts</string>
+    <string name="total_earnings">Total Earnings</string>
+    <string name="time">Time</string>
+    <string name="distance">Distance</string>
+    <string name="distance_from">Distance from your location : %s</string>
+
+    <string name="amount">Amount</string>
+    <string name="no_rides">No rides completed.</string>
+
+
+    <!-- Summary-->
+    <string name="total_rides">TOTAL NO OF RIDES</string>
+    <string name="revenue">REVENUE</string>
+    <string name="schedule_rides">NO OF SCHEDULED RIDES</string>
+    <string name="canceled_rides">CANCELLED RIDES</string>
+    <string name="past_trip_detail">Past Trip Detail</string>
+
+
+    <string name="support">Support</string>
+    <string name="our_team_persons_will_contact_you_soon">Our team persons will contact you soon!</string>
+    <string name="refer_your_friends_to_drive">Refer your friends to drive!</string>
+    <string name="give_the_free_ride_by_reffering_the_invite_code_worth_10vce">Give the free ride by referring the invite code worth %s</string>
+    <string name="share_your_invite_code">Share your Invite Code</string>
+    <string name="refferal_earning">Referral earning</string>
+    <string name="total_members">Total Members</string>
+    <string name="invite_friends">Invite Friends</string>
+    <string name="invite_refferal">Invite Refferal</string>
+    <string name="change_password">Change Password</string>
+    <string name="current_password">Current Password</string>
+    <string name="looking_to_change_password">Looking to change password</string>
+    <string name="go_offline">Click to Offline</string>
+    <string name="go_online">Click to Online</string>
+    <string name="reject">Reject</string>
+    <string name="accept">Accept</string>
+    <string name="pick_up_location">Pick Up Location</string>
+
+
+    <!--Incoming Request-->
+    <string name="pick_up">Pick up Location </string>
+    <string name="drop_at">Drop Location </string>
+
+
+    <!--Flow status -->
+    <string name="arrived">ARRIVED</string>
+
+    <string name="cancel">Cancel</string>
+
+
+    <string name="promotion_applied">Promotion applied</string>
+    <string name="wallet_detection">Wallet detection</string>
+    <string name="amount_to_be_paid">Amount to be Paid</string>
+    <string name="write_your_reviews">Write your reviews</string>
+    <string name="confirm_payment">Confirm Payment</string>
+
+
+    <string name="invalid_first_name">Please enter first name</string>
+    <string name="invalid_last_name">Please enter last name</string>
+    <string name="invalid_mobile">Please enter mobile</string>
+    <string name="validmobile">Please enter valid mobile number</string>
+    <string name="password_should_be_same">Password should be same</string>
+
+    <string name="invalid_old_password">Please enter password</string>
+    <string name="invalid_new_password">Please enter new password</string>
+    <string name="reason_for_cancelling">Reason for cancelling</string>
+    <string name="write_your_comments">Write your comments</string>
+    <string name="no_comments">No Comments</string>
+
+    <string name="card">Card</string>
+    <string name="paypal">Paypal</string>
+
+    <string name="pass_updated">Password updated, Please login again to continue!</string>
+    <string name="write_something">write something…</string>
+    <string name="chat">Chat</string>
+    <string name="invalid_otp">Please enter OTP</string>
+    <string name="wrong_otp">Wrong OTP</string>
+    <string name="emergency_contact">Emergency Contact</string>
+    <string name="no_service_available">No service available</string>
+    <string name="emergency_number_1">Emergency Number 1</string>
+    <string name="emergency_number_2">Emergency Number 2</string>
+    <string name="no_internet_connection">No internet connection, unable to connect!</string>
+    <string name="about_us">About us</string>
+    <string name="terms">Terms</string>.
+    <string name="privacy">Privacy</string>
+    <string name="faq">FAQ</string>
+    <string name="please_give_permissions">Please give permissions</string>
+    <string name="logout_successfully">Logout Successfully</string>
+    <string name="are_sure_you_want_to_logout">Are sure you want to logout?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="where_to">Where to?</string>
+    <string name="pickup_location">Pickup location?</string>
+    <string name="drop_location">Drop Location</string>
+    <string name="home">Home</string>
+    <string name="work">Work</string>
+    <string name="done">Done</string>
+
+    <string name="_min">%s Min(s)</string>
+    <string name="total_distance_km">Total Distance (Km)</string>
+    <string name="total_riding_time_minutes">Total Riding Time (Minutes)</string>
+    <string name="base_fare_first_2km">Base Fare (First 2km)</string>
+    <string name="distance_price">Distance Price</string>
+    <string name="peek_hour_charges">Peak Hour Charges</string>
+    <string name="night_fare">Night Fare</string>
+    <string name="gst">GST</string>
+    <string name="gst_5">GST ( - )</string>
+    <string name="total_riding_charges">Total Riding Charges</string>
+    <string name="customer_payable_amount">Customer Payable Amount</string>
+    <string name="commission_10">Commission ( - )</string>
+    <string name="provider_earnings">Provider Earnings</string>
+    <string name="driver_allowance">Driver Allowance</string>
+    <string name="invalid_drop_address">Please select drop address</string>
+    <string name="invalid_pickup_address">Please select pickup address</string>
+    <string name="otp_verified">OTP Verified</string>
+    <string name="estimate_fare_">Estimate Fare %s</string>
+    <string name="spot_booking">Spot booking</string>
+    <string name="estimate_fare">Estimate Fare:</string>
+    <string name="new_request_created">New request created</string>
+    <string name="rental_normal_price">Rental Price</string>
+    <string name="rental_extra_hour_price">Rental Extra Hour Price</string>
+    <string name="rental_extra_km_price">Rental Extra KM Price</string>
+    <string name="rental_extra_hr_km_price">Extra Hours / KM. Price</string>
+    <string name="driver_beta">Driver Bata</string>
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+    <string name="total_hours">Total Hours</string>
+    <string name="travel_time">Travel Time</string>
+    <string name="no_of_days">No. of Days</string>
+    <string name="round_single">Round / Single</string>
+    <string name="invalid_confirm_password">Please enter confirm password</string>
+    <string name="invalid_emergency_contact">Please enter emergency contact</string>
+
+
+</resources>

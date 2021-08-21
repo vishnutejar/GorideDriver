@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_main_app" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/static_map"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:background="@drawable/ic_launcher_background"
+                        android:scaleType="centerCrop" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_bottom"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:id="@+id/avatar"
+                                    android:layout_width="76dp"
+                                    android:layout_height="76dp"
+                                    android:padding="8dp"
+                                    android:src="@drawable/user" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center|left"
+                                    android:orientation="vertical"
+                                    android:padding="8dp">
+
+                                    <TextView
+                                        android:id="@+id/first_name"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:ellipsize="end"
+                                        android:fontFamily="@font/clanpro_narrnews"
+                                        android:singleLine="true"
+                                        android:textColor="@color/colorPrimaryText"
+                                        android:textSize="@dimen/text_small" />
+
+                                    <android.support.v7.widget.AppCompatRatingBar
+                                        android:id="@+id/rating"
+                                        style="?android:attr/ratingBarStyleSmall"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:isIndicator="false"
+                                        android:progressTint="@color/ratingBarColor"
+                                        android:rating="5" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/booking_id"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="8dp"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/text_small" />
+
+                            <TextView
+                                android:id="@+id/finished_at"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="8dp"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/text_small" />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_bottom"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/lblSource"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawablePadding="8dp"
+                            android:drawableStart="@drawable/circle"
+                            android:gravity="center_vertical"
+                            android:padding="12dp"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="@dimen/text_small" />
+
+                        <TextView
+                            android:id="@+id/lblDestination"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawablePadding="8dp"
+                            android:drawableStart="@drawable/square"
+                            android:gravity="center_vertical"
+                            android:padding="12dp"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="@dimen/text_small" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_bottom"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/clanpro_medium"
+                            android:padding="12dp"
+                            android:text="@string/pay_via"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="@dimen/text_tiny" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/payment_mode"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:drawablePadding="8dp"
+                                android:drawableStart="@drawable/ic_money"
+                                android:gravity="center_vertical"
+                                android:padding="12dp"
+                                android:text="@string/cash"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/text_small" />
+
+                            <TextView
+                                android:id="@+id/payable"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:padding="12dp"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/text_small" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_bottom"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/clanpro_medium"
+                            android:padding="12dp"
+                            android:text="@string/comments"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="@dimen/text_tiny" />
+
+                        <TextView
+                            android:id="@+id/user_comment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/no_comments"
+                            android:padding="12dp"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="@dimen/text_tiny" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp" />
+
+                </LinearLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/view_receipt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="@string/view_receipt"
+            android:textColor="#FFF" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.email.EmailActivity">
+
+    <include layout="@layout/toolbar_main" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="42dp"
+            android:fontFamily="@font/clanpro_medium"
+            android:padding="16dp"
+            android:text="@string/reset_password"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="18sp" />
+
+
+        <EditText
+            android:id="@+id/txtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name_example_com"
+            android:inputType="textEmailAddress"
+            android:visibility="gone"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/txtOTP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/enter_otp"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/txtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/password"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/colorPrimaryText"
+
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/txtNewPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/new_password"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="42dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:text="@string/note_please_enter_the_otp_send_tc_your_registered_email_address"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_right" />
+
+</android.support.design.widget.CoordinatorLayout>
