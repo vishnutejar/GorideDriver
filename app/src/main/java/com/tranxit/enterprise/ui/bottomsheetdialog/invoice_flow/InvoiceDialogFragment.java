@@ -116,8 +116,10 @@ public class InvoiceDialogFragment extends BaseBottomSheetDialogFragment impleme
         String newDateString = null;
         SimpleDateFormat spf = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss", Locale.getDefault());
         try {
-            Date newDate = spf.parse(date);
-            newDateString = new SimpleDateFormat("dd-MMM-yyyy hh:mm a", Locale.getDefault()).format(newDate);
+            if(date!=null) {
+                Date newDate = spf.parse(date);
+                newDateString = new SimpleDateFormat("dd-MMM-yyyy hh:mm a", Locale.getDefault()).format(newDate);
+            }
         } catch (ParseException e) {
             e.printStackTrace();
         }
