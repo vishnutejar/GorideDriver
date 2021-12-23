@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/toolbar"
     android:layout_width="match_parent"
-    android:layout_height="?attr/actionBarSize"
+    android:layout_height="@dimen/_50sdp"
+    android:layout_marginTop="@dimen/_10sdp"
     android:elevation="1dp"
     android:minHeight="?attr/actionBarSize"
     app:popupTheme="@style/AppTheme.PopupOverlay">
@@ -15,19 +16,25 @@
 
         <ImageView
             android:id="@+id/back"
-            android:layout_width="@dimen/_25sdp"
-            android:layout_height="@dimen/_25sdp"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
             android:layout_gravity="center_vertical"
             android:padding="@dimen/_2sdp"
-            android:src="@drawable/ic_back_black"
+            android:src="@drawable/ic_backbt_red"
             android:visibility="visible" />
 
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:gravity="center|left">
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:src="@drawable/ic_logo_showdcircle" />
 
             <TextView
                 android:id="@+id/title"
@@ -37,6 +44,8 @@
                 android:ellipsize="end"
                 android:gravity="center|left"
                 android:singleLine="true"
+                android:fontFamily="@font/clanpro_medium"
+                android:textColor="@color/black"
                 android:textSize="@dimen/_13ssp"
                 android:visibility="visible" />
 

@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_notifications"
     tools:context=".ui.activity.email.EmailActivity">
 
     <include layout="@layout/toolbar_main"/>
@@ -17,30 +18,39 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="42dp"
+            android:layout_marginBottom="@dimen/_30sdp"
             android:fontFamily="@font/clanpro_medium"
-            android:padding="16dp"
+            android:padding="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_50sdp"
             android:text="@string/enter_your_mobile_id_for_recover"
-            android:textColor="@color/colorPrimaryText"
-            android:textSize="18sp" />
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp" />
 
         <EditText
             android:id="@+id/txtEmail"
             android:layout_width="match_parent"
+            android:background="@drawable/bg_rect_shp_rouned_corners"
             android:layout_height="wrap_content"
+            android:padding="@dimen/_20sdp"
+
             android:inputType="textEmailAddress"
-            android:textColor="@color/colorPrimaryText"
-            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="@dimen/_16ssp"
             android:hint="9876543210"/>
+        <Button
+            android:id="@+id/next"
+            android:textColor="@color/white"
+            android:text="@string/submit"
+android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:textAllCaps="false"
+            android:background="@drawable/bg_rect_red_rounded"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_right" />
 
     </LinearLayout>
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/next"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="end|bottom"
-        android:layout_margin="16dp"
-        android:src="@drawable/ic_right" />
 
 </android.support.design.widget.CoordinatorLayout>
