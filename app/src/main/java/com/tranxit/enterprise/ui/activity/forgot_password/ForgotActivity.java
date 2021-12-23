@@ -4,8 +4,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.tranxit.enterprise.driver.R;
@@ -28,7 +30,9 @@ public class ForgotActivity extends BaseActivity implements ForgotIView {
     @BindView(R.id.txtEmail)
     EditText txtEmail;
     @BindView(R.id.next)
-    FloatingActionButton next;
+    Button next;
+    @BindView(R.id.title)
+    TextView title;
 
     String email = "";
 
@@ -48,6 +52,7 @@ public class ForgotActivity extends BaseActivity implements ForgotIView {
             email = extras.getString("email");
             txtEmail.setText(email);
         }
+        title.setText(getText(R.string.forgot_password));
     }
 
     @OnClick({R.id.back, R.id.next})
@@ -59,8 +64,7 @@ public class ForgotActivity extends BaseActivity implements ForgotIView {
             case R.id.next:
                 if (txtEmail.getText().toString().isEmpty()) {
                     Toasty.error(this, getString(R.string.invalid_email), Toast.LENGTH_SHORT, true).show();
-                }
-                else {
+                } else {
                     showLoading();
                     HashMap<String, Object> map = new HashMap<>();
                     map.put("mobile", txtEmail.getText().toString());
