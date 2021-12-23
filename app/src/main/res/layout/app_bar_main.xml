@@ -25,7 +25,7 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:padding="12dp"
-                app:srcCompat="@drawable/ic_menu" />
+                app:srcCompat="@drawable/ic_menu_round_whiteclr" />
 
             <ImageView
                 android:id="@+id/gps"

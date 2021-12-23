@@ -4,11 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/bg_payment_page"
     tools:context=".ui.activity.welcome.WelcomeActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="vertical">
 
@@ -22,7 +23,6 @@
             android:id="@+id/layoutDots"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_alignParentBottom="true"
             android:gravity="center"
             android:orientation="horizontal"
             android:padding="8dp" />
@@ -46,9 +46,10 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
-                android:background="@color/colorAccent"
+                android:background="@drawable/bg_rect_red_rounded"
                 android:text="@string/sign_up"
-                android:textColor="#FFF" />
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
 
             <Button
                 android:id="@+id/sign_in"
@@ -56,10 +57,10 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
-                android:background="@color/colorPrimary"
+                android:background="@drawable/bg_rect_red_rounded"
                 android:text="@string/sign_in"
+                android:textAllCaps="false"
                 android:textColor="#FFF" />
-
 
 
         </LinearLayout>
@@ -69,9 +70,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:padding="12dp"
+            android:padding="@dimen/_12sdp"
             android:text="@string/or_connect_with_social"
-            android:textColor="@color/colorPrimary"
-            android:visibility="gone" />
+            android:textColor="@color/black"
+            android:visibility="visible" />
     </LinearLayout>
 </LinearLayout>
