@@ -235,6 +235,9 @@
     <string name="round_single">Round / Single</string>
     <string name="invalid_confirm_password">Please enter confirm password</string>
     <string name="invalid_emergency_contact">Please enter emergency contact</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="new_user">New user</string>
+    <string name="create_account">Create Account</string>
 
 
 </resources>

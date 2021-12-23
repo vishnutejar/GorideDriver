@@ -2,10 +2,14 @@ package com.tranxit.enterprise.ui.activity.email;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.os.Parcelable;
 import android.support.design.widget.FloatingActionButton;
+import android.text.Html;
+import android.text.InputType;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -16,9 +20,9 @@ import com.tranxit.enterprise.driver.R;
 import com.tranxit.enterprise.base.BaseActivity;
 import com.tranxit.enterprise.common.SharedHelper;
 import com.tranxit.enterprise.data.network.model.User;
+import com.tranxit.enterprise.ui.activity.forgot_password.ForgotActivity;
 import com.tranxit.enterprise.ui.activity.main.MainActivity;
 import com.tranxit.enterprise.ui.activity.otp.OTPActivity;
-import com.tranxit.enterprise.ui.activity.password.PasswordActivity;
 import com.tranxit.enterprise.ui.activity.regsiter.RegisterActivity;
 import com.tranxit.enterprise.ui.activity.welcome.WelcomeActivity;
 import com.tranxit.enterprise.ui.countrypicker.Country;
@@ -41,11 +45,20 @@ public class EmailActivity extends BaseActivity implements EmailIView {
 
     @BindView(R.id.email)
     EditText email;
-    @BindView(R.id.sign_up)
-    TextView signUp;
-    @BindView(R.id.next)
-    FloatingActionButton next;
+    @BindView(R.id.tv_create_account)
+    TextView tv_create_account;
 
+    @BindView(R.id.tv_forgot_password)
+    TextView tv_forgot_password;
+
+    @BindView(R.id.txt_ride)
+    TextView txt_ride;
+
+    @BindView(R.id.next)
+    Button next;
+
+    @BindView(R.id.password)
+    EditText password;
     EmailIPresenter<EmailActivity> presenter = new EmailPresenter<>();
 
     private CountryPicker mCountryPicker;
@@ -66,8 +79,14 @@ public class EmailActivity extends BaseActivity implements EmailIView {
     public void initView() {
         ButterKnife.bind(this);
         presenter.attachView(this);
-        if (BuildConfig.DEBUG) email.setText("2025550096");
+        if (BuildConfig.DEBUG){
+            email.setText("2025550096");
+            password.setText("123456");
+        }
         setCountryList();
+        tv_forgot_password.setText(Html.fromHtml("<p><u>Forget Password?</u></p>"));
+        txt_ride.setText(Html.fromHtml("<font color=#D7251A>D</font><font color=#414141>river</font>"));
+
     }
 
     private void setCountryList() {
@@ -94,25 +113,29 @@ public class EmailActivity extends BaseActivity implements EmailIView {
         countryCode = country.getCode();
     }
 
-    @OnClick({R.id.back, R.id.sign_up, R.id.next})
+    @OnClick({R.id.tv_create_account, R.id.tv_forgot_password,R.id.next, R.id.show_password})
     public void onViewClicked(View view) {
         switch (view.getId()) {
-            case R.id.back:
-//                activity().onBackPressed();
-                startActivity(new Intent(this, WelcomeActivity.class));
-                finish();
+            case R.id.tv_forgot_password:
+                if (!email.getText().toString().isEmpty()) {
+                    startActivity(new Intent(this, ForgotActivity.class).putExtra("email", email.getText().toString()));
+                }else {
+                    Toasty.error(this, getString(R.string.phonenumberValidation), Toast.LENGTH_SHORT, true).show();
+
+                }
                 break;
-            case R.id.sign_up:
+            case R.id.tv_create_account:
                 startActivity(new Intent(this, RegisterActivity.class));
                 break;
-            case R.id.next:
-                if (email.getText().toString().isEmpty()) {
-                    Toast.makeText(this, getString(R.string.phonenumberValidation), Toast.LENGTH_SHORT).show();
-                    return;
+            case R.id.show_password:
+                if (password.getInputType() == InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD) {
+                    password.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+                } else {
+                    password.setInputType(InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
                 }
-                startActivity(new Intent(this, PasswordActivity.class)
-                        .putExtra("email", email.getText().toString())
-                        .putExtra("country_code", countryDialCode));
+                break;
+            case R.id.next:
+                login();
                 break;
         }
     }
@@ -132,8 +155,12 @@ public class EmailActivity extends BaseActivity implements EmailIView {
             Toast.makeText(this, getString(R.string.phonenumberValidation), Toast.LENGTH_SHORT).show();
             return;
         }
+        if (password.getText().toString().isEmpty()) {
+            Toasty.error(this, getString(R.string.invalid_password), Toast.LENGTH_SHORT, true).show();
+            return;
+        }
 
-        HashMap<String, Object> map = new HashMap<>();
+      /*  HashMap<String, Object> map = new HashMap<>();
         map.put("grant_type", "password");
         map.put("mobile", email.getText().toString());
         map.put("password", "123456");
@@ -144,6 +171,16 @@ public class EmailActivity extends BaseActivity implements EmailIView {
         map.put("device_type", BuildConfig.DEVICE_TYPE);
         map.put("scope", "");
         map.put("country_code", countryDialCode);
+        showLoading();
+        presenter.login(map);*/
+
+        HashMap<String, Object> map = new HashMap<>();
+        map.put("mobile", email.getText().toString());
+        map.put("country_code", countryDialCode);
+        map.put("password", password.getText().toString());
+        map.put("device_id", SharedHelper.getKeyFCM(this, "device_id"));
+        map.put("device_type", BuildConfig.DEVICE_TYPE);
+        map.put("device_token", SharedHelper.getKeyFCM(this, "device_token"));
         showLoading();
         presenter.login(map);
     }
@@ -200,4 +237,5 @@ public class EmailActivity extends BaseActivity implements EmailIView {
             Toast.makeText(this, "Thanks your Mobile is successfully verified", Toast.LENGTH_SHORT).show();
         }
     }
+
 }
