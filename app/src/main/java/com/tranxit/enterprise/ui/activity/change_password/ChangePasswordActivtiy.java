@@ -7,7 +7,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.tranxit.enterprise.driver.R;
+import com.goride.provider.R;
 import com.tranxit.enterprise.base.BaseActivity;
 import com.tranxit.enterprise.common.SharedHelper;
 import com.tranxit.enterprise.ui.activity.splash.SplashActivity;

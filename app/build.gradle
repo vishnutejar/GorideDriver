@@ -3,17 +3,16 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.tranxit.enterprise"
+        applicationId "com.goride.provider"
         minSdkVersion 19
         targetSdkVersion 28
         versionCode 12
         versionName "1.2"
         vectorDrawables.useSupportLibrary = true
         multiDexEnabled true
-        applicationIdSuffix '.driver'
 
-        resValue "string", "app_name", "Tranxit Enterprise Driver"
-        resValue "string", "google_map_key", "AIzaSyCIO8Oe2F9RSPi-WOe0zdhsbxkJQSUOewc"
+        resValue "string", "app_name", "GoRide Driver"
+        resValue "string", "google_map_key", "AIzaSyCFp2GhN8JVS_aTtbxpdZxN8IaopfgTrI0"
         resValue "string", "google_directions_key", "AIzaSyCIO8Oe2F9RSPi-WOe0zdhsbxkJQSUOewc"
         resValue "string", "FACEBOOK_APP_ID", "249150199033888"
         resValue "string", "ACCOUNT_KIT_CLIENT_TOKEN", "898888f208258c931431cfd920f5b721"

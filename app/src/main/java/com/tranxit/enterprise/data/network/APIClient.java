@@ -2,7 +2,7 @@ package com.tranxit.enterprise.data.network;
 
 import android.support.annotation.NonNull;
 
-import com.tranxit.enterprise.driver.BuildConfig;
+import com.goride.provider.BuildConfig;
 import com.tranxit.enterprise.MvpApplication;
 import com.tranxit.enterprise.common.SharedHelper;
 import com.facebook.stetho.okhttp3.StethoInterceptor;

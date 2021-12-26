@@ -11,7 +11,7 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.view.animation.DecelerateInterpolator;
 
-import com.tranxit.enterprise.driver.R;
+import com.goride.provider.R;
 
 public class CircularProgressBar extends View {
 

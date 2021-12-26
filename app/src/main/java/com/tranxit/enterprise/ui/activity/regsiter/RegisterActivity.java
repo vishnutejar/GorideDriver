@@ -14,9 +14,9 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.goride.provider.BuildConfig;
+import com.goride.provider.R;
 import com.tranxit.enterprise.data.network.model.SettingsResponse;
-import com.tranxit.enterprise.driver.BuildConfig;
-import com.tranxit.enterprise.driver.R;
 import com.tranxit.enterprise.base.BaseActivity;
 import com.tranxit.enterprise.common.SharedHelper;
 import com.tranxit.enterprise.data.network.model.MyOTP;

@@ -56,7 +56,7 @@ import com.tranxit.enterprise.base.BaseActivity;
 import com.tranxit.enterprise.common.RecyclerItemClickListenerNew;
 import com.tranxit.enterprise.data.network.model.Address;
 import com.tranxit.enterprise.data.network.model.AddressResponse;
-import com.tranxit.enterprise.driver.R;
+import com.goride.provider.R;
 import com.tranxit.enterprise.ui.adapter.PlacesAutoCompleteAdapter;
 
 import java.io.IOException;

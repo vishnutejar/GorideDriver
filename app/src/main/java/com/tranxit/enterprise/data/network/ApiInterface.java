@@ -1,7 +1,7 @@
 package com.tranxit.enterprise.data.network;
 
 import com.tranxit.enterprise.data.network.model.SettingsResponse;
-import com.tranxit.enterprise.driver.BuildConfig;
+import com.goride.provider.BuildConfig;
 import com.tranxit.enterprise.data.network.model.AddressResponse;
 import com.tranxit.enterprise.data.network.model.Document;
 import com.tranxit.enterprise.data.network.model.EarningsList;

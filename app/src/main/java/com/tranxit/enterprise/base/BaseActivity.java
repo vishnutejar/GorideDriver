@@ -15,8 +15,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.goride.provider.R;
 import com.tranxit.enterprise.MvpApplication;
-import com.tranxit.enterprise.driver.R;
 import com.tranxit.enterprise.ui.countrypicker.Country;
 import com.facebook.accountkit.ui.AccountKitActivity;
 import com.facebook.accountkit.ui.AccountKitConfiguration;

@@ -5,8 +5,8 @@ import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
-import com.tranxit.enterprise.driver.BuildConfig;
-import com.tranxit.enterprise.driver.R;
+import com.goride.provider.BuildConfig;
+import com.goride.provider.R;
 import com.tranxit.enterprise.base.BaseActivity;
 
 import butterknife.BindView;

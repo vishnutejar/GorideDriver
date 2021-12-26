@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.ListView;
 
-import com.tranxit.enterprise.driver.R;
+import com.goride.provider.R;
 
 import java.util.ArrayList;
 import java.util.List;

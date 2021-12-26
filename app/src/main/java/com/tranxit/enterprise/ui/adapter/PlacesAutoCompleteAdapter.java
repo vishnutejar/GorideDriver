@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.google.android.libraries.places.api.model.AutocompletePrediction;
-import com.tranxit.enterprise.driver.R;
+import com.goride.provider.R;
 
 import java.util.ArrayList;
 import java.util.List;

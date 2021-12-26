@@ -4,7 +4,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.widget.Button;
 
-import com.tranxit.enterprise.driver.R;
+import com.goride.provider.R;
 import com.tranxit.enterprise.base.BaseActivity;
 
 import butterknife.BindView;

@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.tranxit.enterprise.common.SharedHelper;
-import com.tranxit.enterprise.driver.R;
+import com.goride.provider.R;
 import com.tranxit.enterprise.common.Constants;
 import com.tranxit.enterprise.data.network.model.Ride;
 

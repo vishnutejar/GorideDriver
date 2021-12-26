@@ -3,7 +3,8 @@ package com.tranxit.enterprise.common;
 import android.content.Context;
 import android.content.SharedPreferences;
 
-import com.tranxit.enterprise.driver.BuildConfig;
+import com.goride.provider.BuildConfig;
+
 
 public class SharedHelper {
 

@@ -14,9 +14,9 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
-import com.tranxit.enterprise.driver.BuildConfig;
+import com.goride.provider.BuildConfig;
 import com.tranxit.enterprise.MvpApplication;
-import com.tranxit.enterprise.driver.R;
+import com.goride.provider.R;
 import com.tranxit.enterprise.base.BaseActivity;
 import com.tranxit.enterprise.common.SharedHelper;
 import com.tranxit.enterprise.common.Utilities;

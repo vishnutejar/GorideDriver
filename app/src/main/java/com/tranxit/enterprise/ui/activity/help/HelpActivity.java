@@ -10,8 +10,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 
-import com.tranxit.enterprise.driver.BuildConfig;
-import com.tranxit.enterprise.driver.R;
+import com.goride.provider.BuildConfig;
+import com.goride.provider.R;
 import com.tranxit.enterprise.base.BaseActivity;
 import com.tranxit.enterprise.common.Constants;
 import com.tranxit.enterprise.data.network.model.Help;

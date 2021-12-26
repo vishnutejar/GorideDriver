@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 
-import com.tranxit.enterprise.driver.R;
+import com.goride.provider.R;
 import com.tranxit.enterprise.base.BaseFragment;
 import com.tranxit.enterprise.data.network.model.HistoryList;
 import com.tranxit.enterprise.ui.activity.past_detail.PastTripDetailActivity;

@@ -12,7 +12,7 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 
-import com.tranxit.enterprise.driver.R;
+import com.goride.provider.R;
 import com.tranxit.enterprise.base.BaseFragment;
 import com.tranxit.enterprise.common.SharedHelper;
 import com.tranxit.enterprise.common.fcm.MyFirebaseMessagingService;

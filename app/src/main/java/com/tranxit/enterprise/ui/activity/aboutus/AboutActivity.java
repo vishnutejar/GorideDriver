@@ -8,8 +8,8 @@ import android.view.View;
 import android.webkit.WebView;
 import android.widget.Button;
 
-import com.tranxit.enterprise.driver.BuildConfig;
-import com.tranxit.enterprise.driver.R;
+import com.goride.provider.BuildConfig;
+import com.goride.provider.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

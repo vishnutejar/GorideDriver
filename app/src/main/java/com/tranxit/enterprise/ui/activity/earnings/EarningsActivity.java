@@ -12,7 +12,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.tranxit.enterprise.common.SharedHelper;
-import com.tranxit.enterprise.driver.R;
+import com.goride.provider.R;
 import com.tranxit.enterprise.base.BaseActivity;
 import com.tranxit.enterprise.common.CircularProgressBar;
 import com.tranxit.enterprise.common.Constants;

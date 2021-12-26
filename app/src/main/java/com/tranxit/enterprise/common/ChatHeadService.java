@@ -16,7 +16,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.WindowManager;
 
-import com.tranxit.enterprise.driver.R;
+import com.goride.provider.R;
 import com.tranxit.enterprise.ui.activity.main.MainActivity;
 
 import de.hdodenhof.circleimageview.CircleImageView;

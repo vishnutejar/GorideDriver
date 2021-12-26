@@ -17,7 +17,7 @@ import android.support.v4.content.ContextCompat;
 import android.util.Log;
 
 
-import com.tranxit.enterprise.driver.R;
+import com.goride.provider.R;
 import com.tranxit.enterprise.common.SharedHelper;
 import com.tranxit.enterprise.common.Utilities;
 import com.tranxit.enterprise.ui.activity.main.MainActivity;

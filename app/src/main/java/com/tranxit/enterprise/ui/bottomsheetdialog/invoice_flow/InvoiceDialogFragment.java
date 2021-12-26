@@ -10,7 +10,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.tranxit.enterprise.common.SharedHelper;
-import com.tranxit.enterprise.driver.R;
+import com.goride.provider.R;
 import com.tranxit.enterprise.base.BaseBottomSheetDialogFragment;
 import com.tranxit.enterprise.data.network.model.Payment;
 import com.tranxit.enterprise.data.network.model.RentalHourPackage;

@@ -8,7 +8,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
-import com.tranxit.enterprise.driver.R;
+import com.goride.provider.R;
 import com.tranxit.enterprise.base.BaseActivity;
 import com.tranxit.enterprise.ui.fragment.past.PastTripFragment;
 import com.tranxit.enterprise.ui.fragment.upcoming.UpcomingTripFragment;

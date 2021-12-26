@@ -1,79 +1,66 @@
 {
   "project_info": {
-    "project_number": "258315448228",
-    "firebase_url": "https://taxinew-267909.firebaseio.com",
-    "project_id": "taxinew-267909",
-    "storage_bucket": "taxinew-267909.appspot.com"
+    "project_number": "697234278949",
+    "firebase_url": "https://goride-2aa4c.firebaseio.com",
+    "project_id": "goride-2aa4c",
+    "storage_bucket": "goride-2aa4c.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:258315448228:android:d566b8bb09028ba7049b31",
+        "mobilesdk_app_id": "1:697234278949:android:49abf082a2a9a248",
         "android_client_info": {
-          "package_name": "com.tranxit.enterprise.driver"
+          "package_name": "com.goride.provider"
         }
       },
       "oauth_client": [
         {
-          "client_id": "258315448228-laq0i2jila360ti48d5fna9s8v02ftee.apps.googleusercontent.com",
+          "client_id": "697234278949-23j8nrikt0lumn213vndk9saiavic07g.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.tranxit.enterprise.driver",
-            "certificate_hash": "04c247972802ca113ca58b95153ed78515302c1a"
+            "package_name": "com.goride.provider",
+            "certificate_hash": "4ca3df9304fdeb0707413433fd5b58b132506bfb"
           }
         },
         {
-          "client_id": "258315448228-t24jqma149016sop3vil5k69pma4bf89.apps.googleusercontent.com",
+          "client_id": "697234278949-4e5s6jgjravvq5d4r4i2ogfirodj4tuq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.goride.provider",
+            "certificate_hash": "7cec0a14375a938eac7d0a9a9d76b54a8e459ab8"
+          }
+        },
+        {
+          "client_id": "697234278949-997iq68d66v0gfs6qva2mk2n20bkgoo9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.goride.provider",
+            "certificate_hash": "351352fdf598bdd5e7f5f63f0d673bbfe686f1f0"
+          }
+        },
+        {
+          "client_id": "697234278949-rv34qnf352574jcqi3dgd0hiipom7c72.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.goride.provider",
+            "certificate_hash": "79325e4ec272929caf1828e94b0bc1a34b2ac85f"
+          }
+        },
+        {
+          "client_id": "697234278949-ns3g2mq90s518fa93udaq4smjf3ev4l0.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCZA1stD2jLQEc9zSIdhOBiF9DObhYV-r8"
+          "current_key": "AIzaSyDYQjO4-cCg-Cle39MdYOA2V78skIXI86Q"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "258315448228-t24jqma149016sop3vil5k69pma4bf89.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:258315448228:android:5338829fea3bb04d049b31",
-        "android_client_info": {
-          "package_name": "com.tranxit.enterprise.user"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "258315448228-1nja1o52udrjdqs7km7pe3956n1vauhu.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.tranxit.enterprise.user",
-            "certificate_hash": "04c247972802ca113ca58b95153ed78515302c1a"
-          }
-        },
-        {
-          "client_id": "258315448228-t24jqma149016sop3vil5k69pma4bf89.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyCZA1stD2jLQEc9zSIdhOBiF9DObhYV-r8"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "258315448228-t24jqma149016sop3vil5k69pma4bf89.apps.googleusercontent.com",
+              "client_id": "697234278949-ns3g2mq90s518fa93udaq4smjf3ev4l0.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

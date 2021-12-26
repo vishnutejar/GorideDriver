@@ -22,7 +22,7 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 
-import com.tranxit.enterprise.driver.R;
+import com.goride.provider.R;
 import com.tranxit.enterprise.common.kalman.KalmanLocationManager;
 import com.tranxit.enterprise.ui.activity.main.MainActivity;
 

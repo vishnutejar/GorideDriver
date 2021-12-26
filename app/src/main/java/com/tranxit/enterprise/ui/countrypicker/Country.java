@@ -5,7 +5,7 @@ import android.telephony.TelephonyManager;
 import android.text.TextUtils;
 
 
-import com.tranxit.enterprise.driver.R;
+import com.goride.provider.R;
 
 import java.util.Arrays;
 import java.util.Comparator;
