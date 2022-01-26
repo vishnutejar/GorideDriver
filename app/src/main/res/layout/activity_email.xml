@@ -40,7 +40,7 @@
                     android:layout_width="@dimen/_150sdp"
                     android:layout_height="@dimen/_150sdp"
                     android:layout_centerHorizontal="true"
-                    android:src="@drawable/logo_quickzet" />
+                    android:src="@drawable/ic_splash_gorider" />
 
 
             </RelativeLayout>

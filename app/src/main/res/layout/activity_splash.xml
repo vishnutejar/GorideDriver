@@ -3,14 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FEFEFE"
     tools:context="com.tranxit.enterprise.ui.activity.splash.SplashActivity">
 
     <ImageView
         android:layout_width="match_parent"
-        android:scaleType="center"
         android:layout_height="match_parent"
         android:contentDescription="@string/app_name"
-        android:src="@drawable/bg_img_light_splashscreen" />
+        android:src="@drawable/ic_splash_gorider" />
 
 
 </RelativeLayout>
